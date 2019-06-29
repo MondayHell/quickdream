@@ -1,2 +1,1 @@
-# quickdream
-not quick dream (mrfired, umer, garey)
+волк слабее льва и тигра, но в цирке он не выступает.
