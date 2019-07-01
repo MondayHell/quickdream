@@ -1,30 +1,19 @@
 package package_name;
 
 public class GameObject {
-    private double x;
-    private double y;
-    private boolean smooth;
+    public double x, y;
+    public ArrayList<Graphics> g;
 
-    public GameObject(double x, double y, boolean smooth) {
+    public GameObject(double x, double y) {
         this.x = x;
         this.y = y;
         this.smooth = smooth;
     }
+    
+    public GameObject(){
+    }
 
     void draw() {
-        // ...
-    }
-
-    void next() {
-        // ...
-    }
-
-    boolean isSmooth() {
-        return this.smooth;
-    }
-
-    double damage(double x, double y) {
-        // ...
-        return -1.0;
+        for(var piece: g) g.draw(x, y);
     }
 }
